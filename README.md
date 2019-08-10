@@ -11,9 +11,9 @@ This game contains 2 players. The active player can choose to either roll the di
 2. Adding more than one die to the game
 
 ### Environments Used: ###
-HTML: used as a markup language for the app
-CSS: for styling the said app
-JS: for creating new and updating the already present items in both HTML and CSS
+-HTML: used as a markup language for the app-
+-CSS: for styling the said app-
+-JS: for creating new and updating the already present items in both HTML and CSS-
 
 
 ##### Note: #####
