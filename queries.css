@@ -1,0 +1,62 @@
+@media only screen and (max-width: 1000px) {
+    .container {
+      width: auto;
+      margin: 10px 10px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .p0-winner {
+        font-size: 16px;
+    }
+    .p1-winner {
+        font-size: 16px;
+    }
+}
+  
+@media only screen and (max-width: 550px) {
+    .container {
+        height: 700px;
+    }
+    .current-score-container {
+        top: 35%;
+    }
+    .total-score-container {
+        bottom: 15%;
+    }
+    .p0-winner {
+        font-size: 14px;
+    }
+    .p1-winner {
+        font-size: 14px;
+    }
+    #btn-hold {
+        top: 30%;
+        width: 120px;
+    }
+    #btn-roll {
+        top: 23%;
+        width: 120px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    h1 {
+        font-size: 20px;
+    }
+    .active-player-text {
+        font-size: 16px;
+    }
+    .player {
+        font-size: 18px;
+    }
+    .how-to {
+        width: 45px;
+        height: 45px;
+        top: 18px;
+        right: 18px;
+    }
+    .howto-icon {
+        font-size: 22.5px;
+    }
+}

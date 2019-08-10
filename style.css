@@ -1,0 +1,304 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.clearfix {
+  clear: both;
+}
+
+html {
+  height: 100%;
+   width: 100%;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to top right, #2193b0, #6dd5ed);
+  font-family: "Josefin Sans", sans-serif;
+  background-size: cover;
+  user-select: none;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  padding: 30px;
+  text-transform: uppercase;
+  color: #006d6d;
+  display: block;
+}
+
+.container-top-left,
+.container-top-right {
+  width: 50%;
+  height: 50px;
+  background-color: aliceblue;
+}
+
+.container-top-left {
+  float: left;
+}
+
+.container-top-right {
+  float: right;
+}
+
+.active-player {
+  background-color: #d8f1f8 !important;
+}
+
+.active-player-top {
+  background-color: darkcyan !important;
+}
+
+.active-player-text {
+  text-align: center;
+  color: aliceblue;
+  padding-top: 15px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.container {
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+  margin: 10px auto;
+  width: auto;
+  max-width: 1000px;
+  height: 650px;
+  background-color: aliceblue;
+  border-radius: 15px;
+  box-shadow: 15px 15px 40px #2193b0;
+}
+
+.container--left {
+  width: 50%;
+  float: left;
+  height: 100%;
+  position: relative;
+}
+
+.container--right {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  float: right;
+}
+
+.total-score-container,
+.current-score-container {
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+.current-score-container {
+  top: 40%;
+  border: 2px solid darkcyan;
+  border-radius: 10px;
+}
+
+.total-score-container {
+  bottom: 5%;
+  background-color: darkcyan;
+  border-radius: 10px;
+}
+
+.current-score,
+.p0-current-score,
+.p1-current-score {
+  color: darkcyan;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.p0-current-score,
+.p1-current-score {
+  font-size: 40px;
+  padding-top: 20px;
+}
+
+.total-score,
+.p0-total-score,
+.p1-total-score {
+  color: aliceblue;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.p0-total-score,
+.p1-total-score {
+  font-size: 40px;
+  padding-top: 20px;
+}
+
+.player,
+.p0-winner,
+.p1-winner {
+  text-align: center;
+  text-transform: uppercase;
+  color: darkcyan;
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+.player {
+  font-size: 26px;
+}
+
+.p0-winner,
+.p1-winner {
+  font-size: 32px;
+  animation: flashIt 1s linear infinite alternate;
+}
+
+#btn-hold,
+#btn-roll,
+#btn-reset {
+  height: 35px;
+  border-radius: 25px;
+  background-color: darkcyan;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-tap-highlight-color: transparent;
+}
+
+#btn-hold,
+#btn-roll {
+  width: 140px;
+}
+
+#btn-hold:hover,
+#btn-roll:hover,
+#btn-reset:hover {
+  cursor: pointer;
+}
+
+#btn-hold:active,
+#btn-roll:active,
+#btn-reset:active {
+  transform: translate(-50%, -50%) translateY(5px);
+}
+
+#btn-hold {
+  top: 30%;
+}
+
+#btn-roll {
+  top: 20%;
+}
+
+#btn-reset {
+  bottom: 5%;
+}
+
+.fas {
+  font-size: 18px;
+  color: aliceblue;
+  display: block;
+}
+
+.fa-dice,
+.fa-stopwatch {
+  padding: 8px 30px;
+}
+
+.fa-undo-alt {
+  padding: 8px 15px;
+}
+
+.dice {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dice svg {
+  border-radius: 15px;
+  transform: rotate(45deg);
+}
+
+.how-to {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #006d6d;
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  z-index: 2;
+}
+
+.how-to:hover {
+  cursor: pointer;
+}
+
+.howto-icon {
+  font-size: 25px;
+  color: aliceblue;
+  padding: 12px 15px;
+}
+
+.instructions {
+  z-index: 1000;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.instructions-container {
+  padding: 22px;
+  transition: all .5s;
+  width: 70%;
+  height: auto;
+  background-color: #2193b0;
+  box-shadow: 2px 2px 50px black;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.instructions-container h1,
+.instructions-container p {
+  color: #6dd5ed;
+}
+
+.instructions-container p {
+  width: 85%;
+  height: 85%;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.how-to:focus .instructions {
+  display: block;
+}
+
+.close {
+  color: #006d6d;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+}
+
+@keyframes flashIt {
+  to { transform: scale(1.5); }
+}
